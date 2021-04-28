@@ -1,0 +1,871 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\contracts\\CuratorToken.sol": {
+      "lastModificationDate": 1619071660255,
+      "contentHash": "7c799e2df624a135223119069e52e1ae",
+      "sourceName": "contracts/CuratorToken.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../openzeppelin-contracts-3.4.0/contracts/token/ERC777/ERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "CuratorToken"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\token\\ERC777\\ERC777.sol": {
+      "lastModificationDate": 1619033046727,
+      "contentHash": "9d33dcd68c2a4f769f3dedeac0cf846a",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/token/ERC777/ERC777.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC777.sol",
+        "./IERC777Recipient.sol",
+        "./IERC777Sender.sol",
+        "../../token/ERC20/IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC777"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1619033046880,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\token\\ERC777\\IERC777.sol": {
+      "lastModificationDate": 1619033046749,
+      "contentHash": "5833aafefffbdbdb5f5ee567a3f51b86",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/token/ERC777/IERC777.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC777"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\token\\ERC777\\IERC777Recipient.sol": {
+      "lastModificationDate": 1619033046771,
+      "contentHash": "c611b2349e7afbb03e4fd314878861e0",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/token/ERC777/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Recipient"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\token\\ERC777\\IERC777Sender.sol": {
+      "lastModificationDate": 1619033046793,
+      "contentHash": "c59a76b8a23eaef6f259de54f672d59e",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/token/ERC777/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Sender"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1619033046441,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\math\\SafeMath.sol": {
+      "lastModificationDate": 1619033044386,
+      "contentHash": "e03e12206057e809eb76c5f681170c32",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1619033046838,
+      "contentHash": "7aa46886ff5abe7515496208a5e2ce5a",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\introspection\\IERC1820Registry.sol": {
+      "lastModificationDate": 1619033044304,
+      "contentHash": "820888c202bc007f6112423ee95b9cf0",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/introspection/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Registry"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\contracts\\StakingRewards.sol": {
+      "lastModificationDate": 1619071329473,
+      "contentHash": "9c8b5a73a32f0664aefe5d42e2be7716",
+      "sourceName": "contracts/StakingRewards.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../openzeppelin-contracts-3.4.0/contracts/math/Math.sol",
+        "../openzeppelin-contracts-3.4.0/contracts/math/SafeMath.sol",
+        "../openzeppelin-contracts-3.4.0/contracts/utils/ReentrancyGuard.sol",
+        "../openzeppelin-contracts-3.4.0/contracts/token/ERC777/IERC777.sol",
+        "../openzeppelin-contracts-3.4.0/contracts/access/Ownable.sol",
+        "./Pausable.sol",
+        "./RewardsDistributionRecipient.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "StakingRewards"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\math\\Math.sol": {
+      "lastModificationDate": 1619033044345,
+      "contentHash": "e5c844515b04deabacef7eb872abc384",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/math/Math.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\utils\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1619033047024,
+      "contentHash": "1c60f58cee45c61469e1aea31e4dd879",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\openzeppelin-contracts-3.4.0\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1619033892351,
+      "contentHash": "6748815a5b45c4aeeda56819f41190e0",
+      "sourceName": "openzeppelin-contracts-3.4.0/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\contracts\\Pausable.sol": {
+      "lastModificationDate": 1619034231173,
+      "contentHash": "960fb20fc010c0432266a26211f5341e",
+      "sourceName": "contracts/Pausable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../openzeppelin-contracts-3.4.0/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\contracts\\RewardsDistributionRecipient.sol": {
+      "lastModificationDate": 1619037910880,
+      "contentHash": "c9461c192eca6df745e30e4b090a586f",
+      "sourceName": "contracts/RewardsDistributionRecipient.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../openzeppelin-contracts-3.4.0/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "RewardsDistributionRecipient"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\contracts\\interfaces\\IRewardsDistribution.sol": {
+      "lastModificationDate": 1619041445845,
+      "contentHash": "235e72b6b68ae5c1b2fe341fc7e05598",
+      "sourceName": "contracts/interfaces/IRewardsDistribution.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "IRewardsDistribution"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\contracts\\interfaces\\IStakingRewards.sol": {
+      "lastModificationDate": 1619041369948,
+      "contentHash": "e3d169dde8fa97bbac6cd3e23ff3e441",
+      "sourceName": "contracts/interfaces/IStakingRewards.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "IStakingRewards"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\contracts\\interfaces\\IVotingRights.sol": {
+      "lastModificationDate": 1619042433523,
+      "contentHash": "146ce3f89ba73f7b88b9b0f72b5f59b6",
+      "sourceName": "contracts/interfaces/IVotingRights.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "IVotingRights"
+      ]
+    },
+    "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\contracts\\ERC20.sol": {
+      "lastModificationDate": 1619071368286,
+      "contentHash": "e1ded0ab917793410de7f7618584e190",
+      "sourceName": "contracts/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "CuratorToken",
+        "Token"
+      ]
+    }
+  }
+}

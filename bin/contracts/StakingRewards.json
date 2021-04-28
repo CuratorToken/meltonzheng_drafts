@@ -1,0 +1,781 @@
+{
+    "contractName": "StakingRewards",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address"
+                }
+            ],
+            "name": "authorizeOperator",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "lastUpdateTime",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "periodFinish",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "rewardPerTokenStored",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "rewardRate",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "rewards",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "rewardsDuration",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "rewardsToken",
+            "outputs": [
+                {
+                    "internalType": "contract IERC777",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "stakingToken",
+            "outputs": [
+                {
+                    "internalType": "contract IERC777",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "userRewardPerTokenPaid",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"authorizeOperator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lastUpdateTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"periodFinish\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"rewardPerTokenStored\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"rewardRate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"rewards\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"rewardsDuration\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"rewardsToken\",\"outputs\":[{\"internalType\":\"contract IERC777\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stakingToken\",\"outputs\":[{\"internalType\":\"contract IERC777\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"userRewardPerTokenPaid\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/Melton/OneDrive/Documents/Blockchain/CuratorTokens/contracts/StakingRewards.sol\":\"StakingRewards\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/Melton/OneDrive/Documents/Blockchain/CuratorTokens/contracts/StakingRewards.sol\":{\"keccak256\":\"0x15bf5a112cb4cee84802808ba8b2ade05e1e7386aa0564bccbe29df2fd012067\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d2a9d8f5d24ec9434d4de53b009593cd8f893138889ae6aa9480c25d3c7a1a73\",\"dweb:/ipfs/QmSHSPFTSVn3FbDgsMM8qW7CSpnUF9cV7S7rDz7ndALYuK\"]},\"c:/Users/Melton/OneDrive/Documents/Blockchain/CuratorTokens/openzeppelin-contracts-3.4.0/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"c:/Users/Melton/OneDrive/Documents/Blockchain/CuratorTokens/openzeppelin-contracts-3.4.0/contracts/token/ERC777/IERC777.sol\":{\"keccak256\":\"0xe81b5fca616ec6f57bb9d1ab0750202b9e514760462274ac04495e8c249697ab\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1e23a53ea7f3787f90ff8f6e25ea47896ed4b56e336e72ae543e3ef74eaa9e23\",\"dweb:/ipfs/QmSDNkjN5k2VRbrfWdTMJ39dzcSvFz4YMQqHZ5z61qLNVA\"]},\"c:/Users/Melton/OneDrive/Documents/Blockchain/CuratorTokens/openzeppelin-contracts-3.4.0/contracts/utils/ReentrancyGuard.sol\":{\"keccak256\":\"0x8bbbc2f5c10065ee272592ae0a7a6ceb23de2fbd81564ee0bb015ecf404d5f61\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b95e56c1640d0ef789fc5c16269e141e992f6c8ac97cc6d377bd3825e9cab182\",\"dweb:/ipfs/QmVzaxJZY51EhagrcNnkxoU6Uq17RhATe7aHvtkC6wUkgK\"]}},\"version\":1}",
+    "bytecode": "60806040526000600355600060045562093a8060055534801561002157600080fd5b506001600055610216806100366000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c8063959b8c3f11610066578063959b8c3f14610135578063c8f33c911461015d578063d1af0c7d14610165578063df136d651461016d578063ebe2b12b146101755761009e565b80630700037d146100a3578063386a9525146100db57806372f702f3146100e35780637b0a47ee146101075780638b8763471461010f575b600080fd5b6100c9600480360360208110156100b957600080fd5b50356001600160a01b031661017d565b60408051918252519081900360200190f35b6100c961018f565b6100eb610195565b604080516001600160a01b039092168252519081900360200190f35b6100c96101a4565b6100c96004803603602081101561012557600080fd5b50356001600160a01b03166101aa565b61015b6004803603602081101561014b57600080fd5b50356001600160a01b03166101bc565b005b6100c96101bf565b6100eb6101c5565b6100c96101d4565b6100c96101da565b60096020526000908152604090205481565b60055481565b6002546001600160a01b031681565b60045481565b60086020526000908152604090205481565b50565b60065481565b6001546001600160a01b031681565b60075481565b6003548156fea2646970667358221220921d4cbb5a31bdba641a8b7d768e1f0989fbc9a9887a17093925228265511e2d64736f6c63430007060033",
+    "deployedBytecode": "608060405234801561001057600080fd5b506004361061009e5760003560e01c8063959b8c3f11610066578063959b8c3f14610135578063c8f33c911461015d578063d1af0c7d14610165578063df136d651461016d578063ebe2b12b146101755761009e565b80630700037d146100a3578063386a9525146100db57806372f702f3146100e35780637b0a47ee146101075780638b8763471461010f575b600080fd5b6100c9600480360360208110156100b957600080fd5b50356001600160a01b031661017d565b60408051918252519081900360200190f35b6100c961018f565b6100eb610195565b604080516001600160a01b039092168252519081900360200190f35b6100c96101a4565b6100c96004803603602081101561012557600080fd5b50356001600160a01b03166101aa565b61015b6004803603602081101561014b57600080fd5b50356001600160a01b03166101bc565b005b6100c96101bf565b6100eb6101c5565b6100c96101d4565b6100c96101da565b60096020526000908152604090205481565b60055481565b6002546001600160a01b031681565b60045481565b60086020526000908152604090205481565b50565b60065481565b6001546001600160a01b031681565b60075481565b6003548156fea2646970667358221220921d4cbb5a31bdba641a8b7d768e1f0989fbc9a9887a17093925228265511e2d64736f6c63430007060033",
+    "sourceMap": "290:737:0:-:0;;;526:1;496:31;;562:1;534:29;;603:6;570:39;;290:737;;;;;;;;;-1:-1:-1;1645:1:3;1760:7;:22;290:737:0;;;;;;",
+    "deployedSourceMap": "290:737:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;760:42;;;;;;;;;;;;;;;;-1:-1:-1;760:42:0;-1:-1:-1;;;;;760:42:0;;:::i;:::-;;;;;;;;;;;;;;;;570:39;;;:::i;462:27::-;;;:::i;:::-;;;;-1:-1:-1;;;;;462:27:0;;;;;;;;;;;;;;534:29;;;:::i;696:57::-;;;;;;;;;;;;;;;;-1:-1:-1;696:57:0;-1:-1:-1;;;;;696:57:0;;:::i;960:64::-;;;;;;;;;;;;;;;;-1:-1:-1;960:64:0;-1:-1:-1;;;;;960:64:0;;:::i;:::-;;616:29;;;:::i;428:27::-;;;:::i;652:35::-;;;:::i;496:31::-;;;:::i;760:42::-;;;;;;;;;;;;;:::o;570:39::-;;;;:::o;462:27::-;;;-1:-1:-1;;;;;462:27:0;;:::o;534:29::-;;;;:::o;696:57::-;;;;;;;;;;;;;:::o;960:64::-;;:::o;616:29::-;;;;:::o;428:27::-;;;-1:-1:-1;;;;;428:27:0;;:::o;652:35::-;;;;:::o;496:31::-;;;;:::o",
+    "sourcePath": "c:/Users/Melton/OneDrive/Documents/Blockchain/CuratorTokens/contracts/StakingRewards.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.7.6+commit.7338295f"
+    },
+    "ast": {
+        "absolutePath": "c:/Users/Melton/OneDrive/Documents/Blockchain/CuratorTokens/contracts/StakingRewards.sol",
+        "exportedSymbols": {
+            "IERC777": [
+                561
+            ],
+            "ReentrancyGuard": [
+                601
+            ],
+            "SafeMath": [
+                402
+            ],
+            "StakingRewards": [
+                47
+            ]
+        },
+        "id": 48,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.7",
+                    ".6"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:23:0"
+            },
+            {
+                "absolutePath": "c:/Users/Melton/OneDrive/Documents/Blockchain/CuratorTokens/openzeppelin-contracts-3.4.0/contracts/math/SafeMath.sol",
+                "file": "../openzeppelin-contracts-3.4.0/contracts/math/SafeMath.sol",
+                "id": 2,
+                "nodeType": "ImportDirective",
+                "scope": 48,
+                "sourceUnit": 403,
+                "src": "60:69:0",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "c:/Users/Melton/OneDrive/Documents/Blockchain/CuratorTokens/openzeppelin-contracts-3.4.0/contracts/utils/ReentrancyGuard.sol",
+                "file": "../openzeppelin-contracts-3.4.0/contracts/utils/ReentrancyGuard.sol",
+                "id": 3,
+                "nodeType": "ImportDirective",
+                "scope": 48,
+                "sourceUnit": 602,
+                "src": "131:77:0",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "c:/Users/Melton/OneDrive/Documents/Blockchain/CuratorTokens/openzeppelin-contracts-3.4.0/contracts/token/ERC777/IERC777.sol",
+                "file": "../openzeppelin-contracts-3.4.0/contracts/token/ERC777/IERC777.sol",
+                "id": 4,
+                "nodeType": "ImportDirective",
+                "scope": 48,
+                "sourceUnit": 562,
+                "src": "210:76:0",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "baseName": {
+                            "id": 5,
+                            "name": "ReentrancyGuard",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 601,
+                            "src": "317:15:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_ReentrancyGuard_$601",
+                                "typeString": "contract ReentrancyGuard"
+                            }
+                        },
+                        "id": 6,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "317:15:0"
+                    }
+                ],
+                "contractDependencies": [
+                    601
+                ],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 47,
+                "linearizedBaseContracts": [
+                    47,
+                    601
+                ],
+                "name": "StakingRewards",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "id": 9,
+                        "libraryName": {
+                            "id": 7,
+                            "name": "SafeMath",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 402,
+                            "src": "348:8:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_SafeMath_$402",
+                                "typeString": "library SafeMath"
+                            }
+                        },
+                        "nodeType": "UsingForDirective",
+                        "src": "342:27:0",
+                        "typeName": {
+                            "id": 8,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "361:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        }
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "d1af0c7d",
+                        "id": 11,
+                        "mutability": "mutable",
+                        "name": "rewardsToken",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "428:27:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IERC777_$561",
+                            "typeString": "contract IERC777"
+                        },
+                        "typeName": {
+                            "id": 10,
+                            "name": "IERC777",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 561,
+                            "src": "428:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IERC777_$561",
+                                "typeString": "contract IERC777"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "72f702f3",
+                        "id": 13,
+                        "mutability": "mutable",
+                        "name": "stakingToken",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "462:27:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IERC777_$561",
+                            "typeString": "contract IERC777"
+                        },
+                        "typeName": {
+                            "id": 12,
+                            "name": "IERC777",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 561,
+                            "src": "462:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_IERC777_$561",
+                                "typeString": "contract IERC777"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "ebe2b12b",
+                        "id": 16,
+                        "mutability": "mutable",
+                        "name": "periodFinish",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "496:31:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 14,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "496:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "30",
+                            "id": 15,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "526:1:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "7b0a47ee",
+                        "id": 19,
+                        "mutability": "mutable",
+                        "name": "rewardRate",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "534:29:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 17,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "534:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "30",
+                            "id": 18,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "562:1:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "386a9525",
+                        "id": 22,
+                        "mutability": "mutable",
+                        "name": "rewardsDuration",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "570:39:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 20,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "570:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "37",
+                            "id": 21,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "603:6:0",
+                            "subdenomination": "days",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_604800_by_1",
+                                "typeString": "int_const 604800"
+                            },
+                            "value": "7"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "c8f33c91",
+                        "id": 24,
+                        "mutability": "mutable",
+                        "name": "lastUpdateTime",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "616:29:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 23,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "616:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "df136d65",
+                        "id": 26,
+                        "mutability": "mutable",
+                        "name": "rewardPerTokenStored",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "652:35:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 25,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "652:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "8b876347",
+                        "id": 30,
+                        "mutability": "mutable",
+                        "name": "userRewardPerTokenPaid",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "696:57:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                            "typeString": "mapping(address => uint256)"
+                        },
+                        "typeName": {
+                            "id": 29,
+                            "keyType": {
+                                "id": 27,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "704:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "696:27:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                                "typeString": "mapping(address => uint256)"
+                            },
+                            "valueType": {
+                                "id": 28,
+                                "name": "uint256",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "715:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                }
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "0700037d",
+                        "id": 34,
+                        "mutability": "mutable",
+                        "name": "rewards",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "760:42:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                            "typeString": "mapping(address => uint256)"
+                        },
+                        "typeName": {
+                            "id": 33,
+                            "keyType": {
+                                "id": 31,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "768:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "760:27:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                                "typeString": "mapping(address => uint256)"
+                            },
+                            "valueType": {
+                                "id": 32,
+                                "name": "uint256",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "779:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                }
+                            }
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 36,
+                        "mutability": "mutable",
+                        "name": "_totalSupply",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "811:28:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 35,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "811:7:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "visibility": "private"
+                    },
+                    {
+                        "constant": false,
+                        "id": 40,
+                        "mutability": "mutable",
+                        "name": "_balances",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 47,
+                        "src": "846:45:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                            "typeString": "mapping(address => uint256)"
+                        },
+                        "typeName": {
+                            "id": 39,
+                            "keyType": {
+                                "id": 37,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "854:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "846:27:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                                "typeString": "mapping(address => uint256)"
+                            },
+                            "valueType": {
+                                "id": 38,
+                                "name": "uint256",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "865:7:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                }
+                            }
+                        },
+                        "visibility": "private"
+                    },
+                    {
+                        "body": {
+                            "id": 45,
+                            "nodeType": "Block",
+                            "src": "1014:10:0",
+                            "statements": []
+                        },
+                        "functionSelector": "959b8c3f",
+                        "id": 46,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "authorizeOperator",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 43,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 42,
+                                    "mutability": "mutable",
+                                    "name": "operator",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 46,
+                                    "src": "987:16:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 41,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "987:7:0",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "986:18:0"
+                        },
+                        "returnParameters": {
+                            "id": 44,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1014:0:0"
+                        },
+                        "scope": 47,
+                        "src": "960:64:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 48,
+                "src": "290:737:0"
+            }
+        ],
+        "src": "33:994:0"
+    },
+    "functionHashes": {
+        "authorizeOperator(address)": "959b8c3f",
+        "lastUpdateTime()": "c8f33c91",
+        "periodFinish()": "ebe2b12b",
+        "rewardPerTokenStored()": "df136d65",
+        "rewardRate()": "7b0a47ee",
+        "rewards(address)": "0700037d",
+        "rewardsDuration()": "386a9525",
+        "rewardsToken()": "d1af0c7d",
+        "stakingToken()": "72f702f3",
+        "userRewardPerTokenPaid(address)": "8b876347"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "106800",
+            "executionCost": "50177",
+            "totalCost": "156977"
+        },
+        "external": {
+            "authorizeOperator(address)": "206",
+            "lastUpdateTime()": "1020",
+            "periodFinish()": "1086",
+            "rewardPerTokenStored()": "1064",
+            "rewardRate()": "1065",
+            "rewards(address)": "1125",
+            "rewardsDuration()": "1021",
+            "rewardsToken()": "1081",
+            "stakingToken()": "1082",
+            "userRewardPerTokenPaid(address)": "1213"
+        }
+    }
+}
