@@ -45,6 +45,8 @@ contract CuratorToken is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable,
 
     /* ========== STATE VARIABLES ========== */
 
+    ERC20 stakingToken;
+    ERC20 rewardsToken;
     uint256 public periodFinish = 0;
     uint256 public rewardRate = 0;
     uint256 public rewardsDuration = 7 days;
@@ -80,7 +82,7 @@ contract CuratorToken is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable,
     }
 
     function earned(address account) public view returns (uint256) {
-        return _balancesStaked(account).mul(rewardPerToken().sub(userRewardPerTokenPaid[account])).div(1e18).add(rewards[account]);
+        return _balancesStaked[account].mul(rewardPerToken().sub(userRewardPerTokenPaid[account])).div(1e18).add(rewards[account]);
     }
 
     function getRewardForDuration() external view returns (uint256) {
@@ -93,14 +95,16 @@ contract CuratorToken is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable,
         require(amount > 0, "Cannot stake 0");
         _totalSupplyStaked = _totalSupplyStaked.add(amount);
         _balancesStaked[msg.sender] = _balancesStaked[msg.sender].add(amount);
-        stakingToken.transferFrom(msg.sender, address(this), amount);
+        // this.transferFrom(msg.sender, address(this), amount);
+        // Can just add + subtract
+        
         emit Staked(msg.sender, amount);
     }
 
     function withdraw(uint256 amount) public nonReentrant updateReward(msg.sender) {
         require(amount > 0, "Cannot withdraw 0");
-        _totalSupply = _totalSupply.sub(amount);
-        _balances[msg.sender] = _balances[msg.sender].sub(amount);
+        _totalSupplyStaked = _totalSupplyStaked.sub(amount);
+        _balancesStaked[msg.sender] = _balancesStaked[msg.sender].sub(amount);
         stakingToken.transfer(msg.sender, amount);
         emit Withdrawn(msg.sender, amount);
     }
@@ -115,13 +119,13 @@ contract CuratorToken is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable,
     }
 
     function exit() external {
-        withdraw(_balances[msg.sender]);
+        withdraw(_balancesStaked[msg.sender]);
         getReward();
     }
 
     /* ========== RESTRICTED FUNCTIONS ========== */
 
-    function notifyRewardAmount(uint256 reward) external override onlyRewardsDistribution updateReward(address(0)) {
+    function notifyRewardAmount(uint256 reward) external updateReward(address(0)) {
         if (block.timestamp >= periodFinish) {
             rewardRate = reward.div(rewardsDuration);
         } else {
