@@ -1050,8 +1050,8 @@
       ]
     },
     "C:\\Users\\Melton\\OneDrive\\Documents\\Blockchain\\CuratorTokens\\contracts\\Voting.sol": {
-      "lastModificationDate": 1620181550614,
-      "contentHash": "ad86f45adda9d805d2c3ca2d77a8af06",
+      "lastModificationDate": 1620260759373,
+      "contentHash": "85f8a8f4928b02907fedebdd4dea4c5d",
       "sourceName": "contracts/Voting.sol",
       "solcConfig": {
         "version": "0.7.6",

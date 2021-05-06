@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.7.6;
+pragma abicoder v2; // used for dynamic string arrays
 
 import "./CuratorToken.sol";
 import {SafeMath} from "../openzeppelin-contracts-3.4.0/contracts/math/SafeMath.sol";
@@ -64,7 +65,7 @@ contract Voting is CuratorToken {
 
     // _str is the content hash
     // should there be a limiting factor for making/adding new content
-    function makeNewContent(string memory _con) public {    
+    function addNewContent(string memory _con) public {    
         content.push(_con); // what happens if two content hashes are the same?
         contentIdToContent[_con].totalVotes = 0;
         // do we do anything to captions?
@@ -118,6 +119,6 @@ contract Voting is CuratorToken {
     //
     // EVENTS
     //
-    event NewContent(uint256 id);
+    event NewContent(uint256 size);
 }
     
